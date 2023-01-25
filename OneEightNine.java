@@ -35,3 +35,28 @@ public class OneEightNine {
         }
     }
 }
+
+// Rough first LeetCode accepted submission:
+// class Solution {
+//     public void rotate(int[] nums, int k) {
+//         if(nums.length != 1) {
+//             int netStepsRight = k % nums.length;
+//             if(netStepsRight != 0) {
+//                 int[] answer = new int[nums.length];
+//                 int currentIndex = nums.length - netStepsRight;
+//                 int i = 0;
+//                 while(i < answer.length) {
+//                     answer[i] = nums[currentIndex];
+//                     currentIndex++;
+//                     if(currentIndex == nums.length) {
+//                         currentIndex = 0;
+//                     }
+//                     i++;
+//                 }
+//                 for(int q = 0; q < nums.length; q++) {
+//                     nums[q] = answer[q];
+//                 }
+//             }
+//         }
+//     }
+// }
