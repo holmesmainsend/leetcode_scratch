@@ -1,1 +1,1 @@
-TODO: add clarifying note(s) about this repo here
+# Note: this repo is only for troubleshooting LeetCode problems. It does not contain all the LeetCode problems I'm working on/completed.
