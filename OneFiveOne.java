@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 public class OneFiveOne {
     public static void main(String[] args) {
-        String s = "the sky is blue";
+        String s = "  hello     world  ";
         List<String> intermediate = new LinkedList<String>();
 
         String word = "";
