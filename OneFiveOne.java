@@ -19,9 +19,10 @@ public class OneFiveOne {
         intermediate.add(word);
 
         String output = "";
-        for(int i = intermediate.size() - 1; i >= 0; i--)
+        for(int i = intermediate.size() - 1; i >= 0; i--) {
             output += intermediate.get(i);
+        }
 
-        System.out.println(output);
+        System.out.println(output.trim().replaceAll(" +", " "));
     }   
 }
