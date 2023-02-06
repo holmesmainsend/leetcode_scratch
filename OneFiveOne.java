@@ -70,7 +70,6 @@ public class OneFiveOne {
         if (s == null) System.out.println("null");
         char[] a = s.toCharArray();
         System.out.println(Arrays.toString(a));
-        System.out.println(a[4]);
         int n = a.length;
       
       // step 1. reverse the whole string
@@ -83,18 +82,15 @@ public class OneFiveOne {
 
     static void reverseWords(char[] a, int n) {
       System.out.println(Arrays.toString(a));
-      System.out.println(a[4]);
           int i = 0, j = 0;
           System.out.println("n is: " + n);
           while (i < n) {
+            System.out.println("i is: " + i);
+            System.out.println(Arrays.toString(a));
             while (i < j || i < n && a[i] == ' ') i++; // skip spaces
             System.out.println("i is: " + i);
             while (j < i || j < n && a[j] != ' ') j++; // skip non spaces
             System.out.println("j is: " + j);
-            if(j < n) {
-              System.out.println("a[4] is: " + a[4]);
-              System.out.println("a[j] is: " + a[j]);
-            }
             reverse(a, i, j - 1);                      // reverse the word
           }
     }
