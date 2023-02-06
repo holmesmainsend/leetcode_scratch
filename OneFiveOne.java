@@ -87,7 +87,12 @@ public class OneFiveOne {
           while (i < n) {
             System.out.println("i is: " + i);
             System.out.println(Arrays.toString(a));
-            while (i < j || i < n && a[i] == ' ') i++; // skip spaces
+            // while (i < j || i < n && a[i] == ' ') i++; // skip spaces
+            // NOTE: a || b never evaluates b if a evaluates to true
+            while (i < j || i < n && a[i] == ' ') {
+              System.out.println("a[i] is: " + a[i]);
+              i++;
+            }
             System.out.println("i is: " + i);
             while (j < i || j < n && a[j] != ' ') j++; // skip non spaces
             System.out.println("j is: " + j);
